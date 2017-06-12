@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/_Layout.cshtml";
+}
+@section head
+{
+    <script src="~/Script/gallery.js" ></script>
+    <script src="~/Script/jTest.js" ></script>
+    
+}
+
+<h2>Добро пожаловать в Галерею</h2>
+<details class="setting">
+    <summary class="setting__name">
+        Настройка параметров галереи
+    </summary>
+    <div class="setting__upload">
+        <h3>Загрузить картинку</h3>
+        <form action="/Image/AddImage" enctype="multipart/form-data">
+                <div class="setting__upload__choose_image">
+                    <span>1) Выберите картинку</span><br />
+                    <input type="file" name="file" id="file" multiple accept="image/jpeg,image/png,image/jpg,image/gif" /><br/>
+                    <img id="preview" />
+                </div>
+                <div class="setting__upload__choose_image_name">
+                    <label for="file-name">2) Введите имя изображения(необязательно)</label><br />
+                    <input type="text" name="file_name" id="file_name"/>
+                    <span class="check_file_name">(!) недопустимое имя файла</span><br />
+                </div>       
+                <div class="setting__upload__submit">
+                    3) <input type="submit" id="submit" value="Загрузить" />
+                    <span class="check_submit">(!) выберите картинку</span><br />
+                </div>
+                <p class="message"></p>
+            
+        </form>
+    </div>
+    <div class="setting__filter">
+        <h3>Фильтр по расширениям</h3>
+        <div class="setting__filter__item">
+            <input type="checkbox" id="checkbox1" checked/>
+            <label for="checkbox1">jpg/jpeg</label>
+        </div>
+        <div class="setting__filter__item">
+            <input type="checkbox" id="checkbox2" checked/>
+            <label for="checkbox2">png</label>
+        </div>
+        <div class="setting__filter__item">
+            <input type="checkbox" id="checkbox3" checked />
+            <label for="checkbox3">other</label>
+        </div>
+    </div>
+</details>
+
+<div class="content">
+    <div class="content__gallery">    </div> 
+    <div class="full_view">
+        <img class="full_view__image" src="" title="Кликните, чтобы закрыть"/>
+    </div>
+    <h3 class="label_download">Понравился логотип?</h3>
+    <a class="download" href="~/Content/img/media/New_sense.psd">Скачать макет</a>
+</div>

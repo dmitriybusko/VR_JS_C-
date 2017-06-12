@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@Page.Title</title>
+        <link href="~/Content/style/index.css" rel="stylesheet" type="text/css" />
+        <script src="~/Script/jquery-3.1.1.min.js"></script>
+        @RenderSection("head", required: false)
+    </head>
+<body>
+<header>
+    <div class="container">
+        <div class="menu_bar">
+            <div class="menu_bar__logo">
+                <a href="/">
+                    <img src="~/Content/img/media/new_sense.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu_bar__links">
+                <a href="/">Главная</a>
+                <a href="/Home/Gallery">Галерея</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        @RenderBody()
+    </div>
+</main>    
+<footer>
+    <div class="container">
+        <div class="footer_information">
+            Сайт сделан студентом гр. 410101 Бусько Дмитрием.<br />
+            Любимый цвет - <span class="footer_information__string">коралловый</span><br />
+            2017 &copy; Все права защищены
+        </div>
+    </div>
+</footer>
+</body>
+</html>

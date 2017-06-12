@@ -1,0 +1,226 @@
+﻿html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+header{
+    height: 75px;
+    width: 100%;
+    background: #44bf5e;
+}
+.container{
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 1140px;
+    height: inherit;
+}
+.menu_bar__logo{
+    float: left;
+}
+.menu_bar__logo img{
+    height: 75px;
+}
+.menu_bar__links{
+    float: right;
+}
+.menu_bar__links a{
+    float: left;
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.menu_bar__links a:hover{
+    box-sizing: border-box;
+    border-bottom: 5px solid #fc5f45;
+}
+footer{
+    height:100px;
+    background: #181d58;
+}
+.footer_information{
+    display: block;
+    padding: 20px 0px 0px 30px;
+    color: #ffffff;
+}
+.footer_information__string{
+    color: #fc5f45;
+}
+.main_picture img{
+    max-width: 100%;
+}
+h1{
+    font-size: 50px;
+    text-shadow: 1px 3px 3px #343b8f;
+    font-family: "PF Stamps Pro Blur", sans-serif;
+    color: #44bf5e;
+    text-align: center;
+}
+h2{
+    font-family: sans-serif;
+    text-align:center;
+}
+.description{
+    font-family: "Century Gothic", sans-serif;
+    width:800px;
+    margin: 0 auto;
+    border: 1px dashed #fc5f45;
+    padding: 25px;
+}
+
+.popup_name{
+    position:relative;
+    display:inline-block;
+    background:#dbdbdb;
+}
+.popup_data{
+    width:200px;
+    height:150px;
+    display:none;
+    position:absolute;
+    background:#343b8f;
+    color:white;
+    top: -162px;
+    border: 2px solid #6f6f6f;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 2;
+    font-family:sans-serif;
+    font-size:14px;
+}
+.triangle{
+    display:none;
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:-28px;
+    background:#181d58;
+    transform: rotate(-45deg);
+    z-index: 1;
+    border: 2px solid #272727;
+    left: 5px;
+}
+.popup_name:hover > div{
+    display:block;
+}
+
+.details_information{
+    width:800px;
+    text-align: center;
+    margin:0 auto;
+    font-family: "Century Gothic", sans-serif;
+}
+.check{
+    padding: 0px;
+    text-align: left;
+}
+
+.details_information{
+    padding: 10px;
+}
+.content{
+    min-height: calc( 100vh - 253px );
+}
+.content__gallery{
+    width:100%;
+    float:left;
+}
+
+.content__gallery__item__image{
+    display: block;
+    float: left;
+    max-width: 28%; 
+    max-height: 200px;
+    margin: 2% 2.6%;
+    border: 5px solid white;
+    border-radius: 10px;
+    overflow:hidden;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.setting{
+    float: left;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    background: #f5f5f5;
+    margin-bottom: 15px;
+}
+.setting__name{
+    cursor: pointer;
+    line-height: 30px;
+    height: 30px;
+    background: #e8e8e8;
+}
+#preview{
+    max-height: 173px;
+    max-width: 173px;
+}
+.setting__upload,
+.setting__filter{
+    float:left;
+    width: 49%;
+    padding-left: 1%;
+}
+.full_view{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(96, 96, 102, 0.6);
+}
+.setting__upload__choose_image,
+.setting__upload__choose_image_name,
+.setting__upload__submit{
+       margin-bottom:20px;
+}
+.full_view__image{
+    max-width:1140px;
+    max-height: 650px;
+    box-shadow: 0 0 35px 10px black;
+}
+.check_file_name{
+    display: none;
+    color: red;
+}
+.check_submit{
+    display: none;
+    color: red;
+}
+.label_download{
+    text-align:center;
+}
+.download{
+    display:block;
+    margin: 0 auto;
+    height:40px;
+    line-height:40px;
+    width: 190px;
+    background: #181d58;
+    color: white;
+    text-decoration:none;
+    text-align:center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-out;
+}
+.download:hover{
+    background: white;
+    color: #343b8f;
+    width:210px;
+    height:60px;
+    line-height:60px;
+    border: 1px solid #343b8f;
+    font-weight: bold; 
+}
